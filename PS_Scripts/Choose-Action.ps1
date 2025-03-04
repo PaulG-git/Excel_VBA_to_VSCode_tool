@@ -7,8 +7,8 @@ param (
 $workspaceFolder = Split-Path -Parent $PSScriptRoot
 
 # Construct the full paths for the scripts
-$exportScript = Join-Path $workspaceFolder "\.vscode\Export-VBA.ps1"
-$importScript = Join-Path $workspaceFolder "\.vscode\Import-VBA.ps1"
+$exportScript = Join-Path $workspaceFolder "\PS_Scripts\Export-VBA.ps1"
+$importScript = Join-Path $workspaceFolder "\PS_Scripts\Import-VBA.ps1"
 
 # Debugging Outputs
 Write-Host "`n=== DEBUG INFO ==="

@@ -10,7 +10,7 @@
                 "-ExecutionPolicy",
                 "Bypass",
                 "-File",
-                "${workspaceFolder}/.vscode/Choose-Action.ps1"
+                "${workspaceFolder}/PS_Scripts/Choose-Action.ps1"
             ],
             "problemMatcher": [],
             "group": {
