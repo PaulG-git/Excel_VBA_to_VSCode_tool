@@ -1,0 +1,20 @@
+
+
+Running the Export command gets all the VBE elements from the workbook to be able to edit in Visual Studio Code. 
+Import command is used to import all scripts from Visual Studio Code back to Excel. All the scripts inside Excel will be replaced. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+To run the commands directly from Visual Studio Code press Ctrl+Shift+P and run "Run Build Task" or press Ctrl+Shift+B to instantly run the task.
+Then type in the terminal: '1' to run the Export script or '2' to run the Import script
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Always make backup of the scripts you're working on!
+
+PowerShell commands: 
+
+Change directory
+cd "C:\folder_with_your_scripts"
+
+Export command
+.\Export-VBA.ps1 -ExcelFilePath "C:\path_of_your\excel_file.xlsm" -ExportFolder "C:\path_of_folder_to_export_scripts"
+
+Import command
+.\Import-VBA.ps1 -ExcelFilePath "C:\path_of_your\excel_file.xlsm" -ImportFolder "C:\path_of_folder_to_import_scripts"
